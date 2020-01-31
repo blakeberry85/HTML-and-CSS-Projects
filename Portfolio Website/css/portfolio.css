@@ -1,0 +1,237 @@
+/*BODY*/
+body {
+    margin: 0%;
+}
+
+/*NAVBAR*/
+.navbar {
+    overflow:hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*NAVBAR TEXT*/
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*NAVBAR HOVER EFFECT*/
+.navbar a:hover {
+    background-color: #eb934b;
+    color: black;
+    font-weight: bold;
+}
+
+/*NAVBAR HOME BUTTON*/
+.navbar a.active {
+    background-color: rgb(94, 94, 94);
+}
+
+/*VIDEO*/
+#fire {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/*TEXT OVER THE VIDEO*/
+.video_text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23%;
+}
+
+/*TABLE*/
+* {
+    box-sizing: border-box;
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px; /*Adjust according to text within the columns*/
+    background-color: #f2f2f2;
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #eb934b;
+}
+
+.column_3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.5%;
+    height: 500px;
+    background-color: #eb934b;
+}
+
+.column_4 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*HEADING 1 ELEMENTS*/
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.title {
+    color: white;
+}
+
+/*PARAGRAPH ELEMENTS*/
+p {
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*CENTER ALIGN ELEMENTS*/
+center {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*ANCHOR ELEMENTS*/
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*QUOTATION ELEMENTS*/
+q {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*IMAGE ELEMENTS*/
+img {
+    filter: grayscale(100%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*CONTACT FORM*/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Helvetica, sans-serif;
+}
+
+/*SUBMIT BUTTON*/
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica, sans-serif;
+}
+
+/*HOVER EFFECT FOR SUBMIT BUTTON*/
+input[type=submit]:hover {
+    background-color: #eb934b;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+/*FORM ELEMENT*/
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: "Trebuchet MS", Optima;
+}
+
+/*CENTER ALIGN ELEMENT HOVER EFFECT*/
+center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+    color: #eb934b;
+}
+
+/*PARAGRAPH ELEMENT HOVER EFFECT*/
+p:hover {
+    color: #eb934b;
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/*HEADING 1 ELEMENT HOVER EFFECT*/
+h1:hover {
+    color: #eb934b;
+    transition: transform 1s;
+    transform: scale(1.1)
+}
+
+/*IMAGE ELEMENT HOVER EFFECTS*/
+img:hover {
+    filter: grayscale(0%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/*FOOTER ELEMENT*/
+footer {
+    padding: 2%;
+    background-color: white;
+}
