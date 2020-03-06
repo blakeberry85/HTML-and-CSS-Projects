@@ -24,15 +24,64 @@
 	
 	<!-- PICTURES -->
 	<section>
-		<div id="pictures">
-			<h1>Cat Pictures</h1>
-			<img src="./images/cat_1.jpg" alt="cat_1" height="200" width="200">
-			<img src="./images/kitten_1.jpg" alt="kitten_1" height="200" width="200">
-			<img src="./images/cat_2.jpg" alt="cat_2" height="200" width="200">
-			<img src="./images/kitten_2.jpg" alt="kitten_2" height="200" width="200">
+		<h1>Cat Pictures</h1>
+		<div id="picturerow">
+			<div class="picturecolumn">
+				<img src="./images/cat_1.jpg" alt="cat_1" height="200" width="200">
+			</div>
+			<div class="picturecolumn">
+				<img src="./images/kitten_1.jpg" alt="kitten_1" height="200" width="200">
+			</div>
+			<div class="picturecolumn">
+				<img src="./images/cat_2.jpg" alt="cat_2" height="200" width="200">
+			</div>
+			<div class="picturecolumn">
+				<img src="./images/kitten_2.jpg" alt="kitten_2" height="200" width="200">
+			</div>
 		</div>
 	</section>
 	<!-- END PICTURES -->
+
+	<!-- LIGHTBOX -->
+	<div id="catLightbox" class="lightbox">
+		<span class="exit-lightbox" onclick="closeLightbox()">&times;</span>
+		<div class="lightbox-content">
+			<div class="catSlides">
+				<div class="image-number">1</div>
+				<img src="images/cat_1.jpg" alt="cat_1"style="width:100%">
+			</div>
+			<div class="catSlides">
+				<div class="image-number">2</div>
+				<img src="images/kitten_1.jpg" alt="kitten_1"style="width:100%">
+			</div>
+			<div class="catSlides">
+				<div class="image-number">3</div>
+				<img src="images/cat_2.jpg" alt="cat_2"style="width:100%">
+			</div>
+			<div class="catSlides">
+				<div class="image-number">4</div>
+				<img src="images/kitten_2.jpg" alt="kitten_2"style="width:100%">
+			</div>
+			<a class="prevCat" onclick="changeSlide(-1)">&#10094;</a>
+			<a class="nextCat" onclick="changeSlide(1)">&#10095;</a>
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+			<div class="picturecolumn">
+				<img class="thumbnail" src="images/cat_1.jpg" onclick="toSlide(1)" alt="cat_1">
+			</div>
+			<div class="picturecolumn">
+				<img class="thumbnail" src="images/kitten_1.jpg" onclick="toSlide(2)" alt="kitten_1">
+			</div>
+			<div class="picturecolumn">
+				<img class="thumbnail" src="images/cat_2.jpg" onclick="toSlide(3)" alt="cat_2">
+			</div>
+			<div class="picturecolumn">
+				<img class="thumbnail" src="images/kitten_2.jpg" onclick="toSlide(4)" alt="kitten_2">
+			</div>
+		</div>
+	</div>
+	<!-- END LIGHTBOX-->
 	
 	<!-- VIDEO -->
 	<section>
