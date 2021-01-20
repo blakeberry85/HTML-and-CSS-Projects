@@ -1,1 +1,1 @@
-# HTML-and-CSS-Projects
+Repository for all my HTML/CSS oriented projects
